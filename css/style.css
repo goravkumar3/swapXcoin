@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#ffff;
+    --secondry-color:#000;
+    --hv-color:#eae5e5;
+    --l-color:rgb(248 248 248);
+}
+.dark-theme{
+    --primary-color:#000;
+    --secondry-color:#fff;
+    --hv-color:#524d4d;
+    --l-color:rgb(32 34 44);
+}
+body,html{
+    overflow-x: hidden;
+    background-color: var(--primary-color);
+    color: var(--secondry-color);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    border-bottom: 1px solid #315231;
+    height: auto;
+}
+.logo{
+    width: 200px;
+}
+.logo img{
+    width: 100%;
+    aspect-ratio: 3/1.4;
+    object-fit: contain;
+}
+.account{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.account a{
+text-decoration: none;
+color: var(--secondry-color);
+font-size: 20px;
+}
+.account img{
+    filter: invert();
+    width: 30px;
+    cursor: pointer;
+}
+.btn{
+    border: 1px solid var(--secondry-color);
+    padding: 8px 27px;
+    border-radius: 40px;
+    transition: 1s background-color ease-out;
+}
+.btn:hover{
+    background-color:var(--secondry-color);
+    color: var(--primary-color);
+}
+main{
+    text-align: center;
+    padding: 200px 0px;
+    background: url(./../media/fabio-oyXis2kALVg-unsplash.jpg) no-repeat center center/cover;
+    color: #fff;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+main h1{
+    font-size: 70px;
+    text-shadow: 1px 2px 2px var(--primary-color);
+}
+.CryptoSect{
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#Crypto{
+    background-color: var(--l-color);
+    padding: 40px;
+    width: 80%;
+}
+.crypget{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+    width: 100%;
+}
+.crptoSlect{
+    width: 40%;
+    font-size: 20px;
+}
+.crptoSlect select{
+    border: none;
+    width: 100%;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 2px slateblue;
+    background-color: var(--primary-color);
+    color: var(--secondry-color);
+}
+.convertBtn{
+    width: 40px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.convertBtn img{
+    width: 100%;
+    cursor: pointer;
+}
+.amount{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 72px;
+    width: 100%;
+    margin-top: 20px;
+}
+.amount input{
+    border: none;
+    width: 100%;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 2px slateblue;
+    background-color: var(--primary-color);
+    color: var(--secondry-color);
+}
+.amount div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#exchange{
+    padding:30px;
+    margin-top: 100px;
+}
+.xsc{
+    font-weight: 800;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+.Cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    width: 100%;
+    margin-top: 40px;
+}
+.card{
+     width: 400px;
+     display: flex;
+     flex-direction: column;
+     padding: 40px;
+     height: auto;
+     transition: transform 1s ease-in;
+     border-radius: 10px;
+}
+.card:hover{
+    background-color: var(--hv-color);
+    transform: scale(1.02);
+}
+.cardImg{
+    width: 40px;
+}
+.cardImg img{
+    width: 100%;
+    filter: unset;
+}
+.exInf{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+.exInf p{
+    font-size: 20px;
+}
+.exInf h1{
+    
+    font-size: 60px;
+}
+.p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.exInf a{
+    margin-top: 20px;
+    font-size: 30px;
+}
+#Works{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    background-color: var(--l-color);
+    padding: 70px 0px;
+}
+.WorkInf{
+    width: 40%;
+    padding-left: 40px;
+}
+.WorkInf h1{
+font-size: 60px;
+}
+.WorkInf p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.WorkInf a{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.btcImg{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.btcImg img{
+    width: 50%;
+}
+#coins{
+    display: grid;
+    place-items: center;
+    margin-top: 80px;
+}
+#coins a{
+    margin-top: 20px;
+    font-size: 30px;
+}
+table tr{
+    width: 100%;
+    border: 1px  var(--secondry-color) dotted;
+}
+table{
+    box-shadow: 0px 0px 4px skyblue ;
+}
+table th,td{
+    padding:20px;
+width: 230px;
+text-align: center;
+}
+table img{
+width: 40px;
+}
+.CoinName{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    margin-top: 70px;
+    border-top: 1px solid aquamarine;
+    background-color: var(--secondry-color);
+    color: var(--primary-color);
+}
+.ftl{
+    filter: invert();
+}
+/* Media Query */
+@media  only screen and (max-width:1400px) {
+ .card{
+    width: 300px;
+ }   
+}
+@media  only screen and (max-width:1000px) {
+    main h1{
+        font-size: 60px;
+    }
+    #exchange{
+        flex-direction: column;
+    }
+    .Cards{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 400px;
+    }
+    .exInf{
+        width: 100%;
+        text-align: center;
+    }
+    #Works{
+        flex-direction: column-reverse;
+    }
+    .WorkInf{
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+        padding: 0px 40px;
+    }
+    .btcImg{
+        width: 100%;
+        display: grid;
+        place-items: center;
+
+    }
+    .amount{
+      margin-left: 30px;
+    }
+   }
+
+   @media  only screen and (max-width:800px) {
+    
+    main h1{
+        font-size: 40px;
+    }
+    .card{
+       width: 100%;
+    }   
+    table{
+      padding: 0px 20px;
+    }
+    .toHide{
+        display: none;
+    }
+    #coins{
+        text-align: center;
+        display: block;
+    }
+    .coinCards{
+        width: 100%;
+    }
+    table{
+        width: 100%;
+    }
+    table th,td{
+        text-align: center;
+        }
+        .exInf h1{
+            font-size: 40px;
+        }
+   }
+   @media  only screen and (max-width:500px) {
+         
+        .exInf h1{
+            font-size: 30px;
+        }
+        main h1{
+            font-size: 30px;
+        }
+        #Crypto{
+         width: 100%;
+        }
+   }
+/* POP UP Forms */
+
+.modal-box{ font-family: 'Poppins', sans-serif; }
+.show-modal{
+    color: #fff;
+    background: #000;
+
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    margin: 200px auto 0;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+.show-modal:hover,
+.show-modal:focus{
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    outline: none;
+}
+.modal-dialog{
+    width: 400px;
+    margin: 70px auto 0;
+}
+.modal-dialog{ transform: scale(0.5); }
+.modal-dialog{ transform: scale(1); }
+.modal-dialog .modal-content{
+    text-align: center;
+    border: none;
+}
+.modal-content .close{
+    color: #fff;
+    background:#000;
+    font-size: 25px;
+    font-weight: 400;
+    text-shadow: none;
+    line-height: 27px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 1;
+    position: absolute;
+    left: auto;
+    right: 8px;
+    top: 8px;
+    z-index: 1;
+    transition: all 0.3s;
+}
+.modal-content .close:hover{
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.close:focus{ outline: none; }
+.modal-body{ padding: 60px 40px 40px !important; }
+.modal-body .title{
+    color: #000;
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0 0 10px;
+}
+.modal-body .description{
+    color: #9A9EA9;
+    font-size: 16px;
+    margin: 0 0 20px;
+}
+.modal-body .form-group{
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+}
+.modal-body .input-icon{
+    color: #777;
+    font-size: 18px;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 20px;
+}
+.modal-body .form-control{
+    font-size: 17px;
+    height: 45px;
+    width: 100%;
+    padding: 6px 0 6px 50px;
+    margin: 0 auto;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    box-shadow: none;
+    outline: none;
+}
+.form-control::placeholder{
+    color: #AEAFB1;
+}
+.form-group.checkbox{
+    width: 130px;
+    margin-top: 0;
+    display: inline-block;
+}
+.form-group.checkbox label{
+    color: #9A9EA9;
+    font-weight: normal;
+}
+.form-group.checkbox input[type=checkbox]{
+    margin-left: 0;
+}
+.modal-body .forgot-pass{
+    color: #7F7FD5;
+    font-size: 13px;
+    text-align: right;
+    width: calc(100% - 135px);
+    margin: 2px 0;
+    display: inline-block;
+    vertical-align: top;
+    transition: all 0.3s ease 0s;
+}
+.forgot-pass:hover{
+    color: #9A9EA9;
+    text-decoration: underline;
+}
+.modal-content .modal-body .btn{
+    color: #fff;
+    background:#000;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 38px;
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    transition: all 0.6s ease 0s;
+}
+.modal-content .modal-body .btn:hover{
+    color: #fff;
+    letter-spacing: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.modal-content .modal-body .btn:focus{ outline: none; }
+@media only screen and (max-width: 480px){
+    .modal-dialog{ width: 95% !important; }
+    .modal-content .modal-body{
+        padding: 60px 20px 40px !important;
+    }
+}
+
+/* pop up form ends here */

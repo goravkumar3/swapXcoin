@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwapXcoin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./media/bakri.png" alt="" class="filt">
+        </div>
+        <div class="account">
+            <span><a href="#Signin" type="button" data-toggle="modal" data-target="#myModal1">Signin</a></span>
+            <span><a href="#Signup" type="button" data-toggle="modal" data-target="#myModal2"
+                    class="btn">Signup</a></span>
+            <!-- <span><i class="bi bi-brightness-high-fill" id="mode"></i></span> -->
+            <img src="./media/moon.png" alt="" id="mode">
+        </div>
+    </nav>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <h1>Cryptocurrency Converter</h1>
+            </div>
+        </div>
+    </main>
+    <!-- Cryptocurrency Converter -->
+    <section class="container-fluid">
+        <div class="CryptoSect row">
+            <div id="Crypto" class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xsm-12">
+                <div class="crypget">
+                    <div class="crptoSlect">
+                        <select id="from">
+                            <option value="Bitcoin">Bitcoin</option>
+                            <option>Bitcoin</option>
+                            <option>Bitcoin</option>
+                        </select>
+                    </div>
+                    <div class="convertBtn">
+                        <img src="./media/converter.png" alt="" class="filt">
+                    </div>
+                    <div class="crptoSlect">
+                        <select>
+                            <option>USD</option>
+                            <option>Bitcoin</option>
+                            <option>Bitcoin</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="amount">
+                    <div class="crptoSlect">
+                        <label>Set Amount</label>
+                        <input type="number" placeholder="0" id="setAmm">
+                    </div>
+                    <div class="crptoSlect">
+                        <label>Get Amount</label>
+                        <div id="getValue">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="exchange">
+        <h1 class="xsc">Why Choose SwapXcoin</h1>
+        <div class="Cards">
+            <div class="card">
+                <div class="cardImg">
+                    <img src="./media/transaction.png" alt="" class="filt">
+                </div>
+                <div class="cardInfo">
+                    <h2>Secure Transaction</h2>
+                    <p>We guarantee the security of your transaction! We use encryption and other security measures to
+                        protect your sensitive information with SwapXcoin.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardImg">
+                    <img src="./media/money.png" alt="" class="filt">
+                </div>
+                <div class="cardInfo">
+                    <h2>Simple way Transfer </h2>
+                    <p>Transfer money with ease! Our streamlined process makes it simple and straightforward to send
+                        money to anyone, anywhere.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardImg">
+                    <img src="./media/increase.png" alt="" class="filt">
+                </div>
+                <div class="cardInfo">
+                    <h2>Save Trading</h2>
+                    <p>With our secure trading platform, you can rest assured that your investments are protected from
+                        unauthorized access or fraud.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardImg">
+                    <img src="./media/trusted.png" alt="" class="filt">
+                </div>
+                <div class="cardInfo">
+                    <h2>Trusted Platform</h2>
+                    <p>Trust us with your transactions! Our platform is built on trust and transparency, ensuring a safe
+                        and reliable experience.</p>
+                </div>
+            </div>
+        </div>
+        <div class="exInf">
+            <h1>Most Trusted and Secure Exchange Platform</h1>
+            <p>SwapXcoin will protect your cryptocurrency investments with our secure exchange platform, trusted by
+                millions for its commitment to safety and security.</p>
+            <p class="p">Money through commissions and transaction fees</p>
+            <a href="#">Explore more</a>
+        </div>
+    </section>
+    <section id="Works">
+        <div class="WorkInf">
+            <h3>How to works</h3>
+            <h1>We will help you to start cryptocurrency exchange</h1>
+            <p>Centralized cryptocurrency exchanges act as intermediary between a buyer and a seller and make.</p>
+            <a href="#">Read more</a>
+        </div>
+        <div class="btcImg">
+            <img src="./media/bitcoin.png" alt="">
+        </div>
+    </section>
+    <section id="coins">
+        <div>
+            <h3>Exchangeable Token</h3>
+        </div>
+        <div class="coinCards">
+            <table>
+                <tr>
+                    <th>Coin</th>
+                    <th>Last Price</th>
+                    <th class="toHide">24th Change</th>
+                    <th class="toHide">Markets</th>
+                </tr>
+                <tr>
+                    <td class="CoinName">
+                        <img src="./media/bitcoin (1).png" alt="" class="filt">
+                        <span>BTC</span>
+                        <span>Bitcoin</span>
+                    </td>
+                    <td>
+                        $22,438.40
+                    </td>
+                    <td class="toHide">
+                        -0.09%
+                    </td>
+                    <td class="toHide">
+                        <img src="./media/growth-graph.png" alt="" class="filt">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="CoinName">
+                        <img src="./media/polygon.png" alt="">
+                        <span>MATIC</span>
+                        <span>polygon</span>
+                    </td>
+                    <td>
+                        $1.14
+                    </td>
+                    <td class="toHide">
+                        +0.34%
+                    </td>
+                    <td class="toHide">
+                        <img src="./media/growth-graph.png" alt="" class="filt">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="CoinName">
+                        <img src="./media/binance.png" alt="">
+                        <span>BUSD</span>
+                        <span>Binance</span>
+                    </td>
+                    <td>
+                        $1.00
+                    </td>
+                    <td class="toHide">
+                        -0.02%
+                    </td>
+                    <td class="toHide">
+                        <img src="./media/growth-graph.png" alt="" class="filt">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="CoinName">
+                        <img src="./media/doge.png" alt="">
+                        <span>DOGE</span>
+                        <span>Dogecoin</span>
+                    </td>
+                    <td>
+                        $0.0752
+                    </td>
+                    <td class="toHide">
+                        -0.57%
+                    </td>
+                    <td class="toHide">
+                        <img src="./media/growth-graph.png" alt="" class="filt">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="CoinName">
+                        <img src="./media/tether.png" alt="">
+                        <span>USDT</span>
+                        <span>Tether</span>
+                    </td>
+                    <td>
+                        $1.00
+                    </td>
+                    <td class="toHide">
+                        0%
+                    </td>
+                    <td class="toHide">
+                        <img src="./media/growth-graph.png" alt="" class="filt">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="CoinName">
+                        <img src="./media/xrp.png" alt="">
+                        <span>XRP</span>
+                        <span>XRP</span>
+                    </td>
+                    <td>
+                        $0.37
+                    </td>
+                    <td class="toHide">
+                        +0.03%
+                    </td>
+                    <td class="toHide">
+                        <img src="./media/growth-graph.png" alt="" class="filt">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="CoinName">
+                        <img src="./media/ethereum.png" alt="" class="filt">
+                        <span>ETH</span>
+                        <span>Ethereum</span>
+                    </td>
+                    <td>
+                        $1,568.35
+                    </td>
+                    <td class="toHide">
+                        +0.37%
+                    </td>
+                    <td class="toHide">
+                        <img src="./media/growth-graph.png" alt="" class="filt">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="CoinName">
+                        <img src="./media/cardano.png" alt="">
+                        <span>ADA</span>
+                        <span>Cardano</span>
+                    </td>
+                    <td>
+                        $0.34
+                    </td>
+                    <td class="toHide">
+                        -0.69%
+                    </td>
+                    <td class="toHide">
+                        <img src="./media/growth-graph.png" alt="" class="filt">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <a href="#">Explore More</a>
+    </section>
+    <footer>
+        <div class="logo">
+            <img src="./media/3D378C8C-0263-457C-984D-76299D3FA62A.png" alt="" class="ftl">
+        </div>
+        <div class="account">
+            <span>&copy;2023 SwapXcoin</span>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- Popup forms start here -->
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content clearfix">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">×</span></button>
+                <div class="modal-body">
+                    <h3 class="title">Signin Form</h3>
+                    <p class="description">Signin here Using Email & Password</p>
+                    <div class="form-group">
+                        <span class="input-icon"><i class="fa fa-user"></i></span>
+                        <input type="email" class="form-control" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon"><i class="fas fa-key"></i></span>
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox">
+                        <label>Remamber me</label>
+                    </div>
+                    <a href="" class="forgot-pass">Forgot Password?</a>
+                    <button class="btn">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content clearfix">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">×</span></button>
+                <div class="modal-body">
+                    <h3 class="title">Register Form</h3>
+                    <p class="description">Register Uerself Using Email & Password</p>
+                    <div class="form-group">
+                        <span class="input-icon"><i class="fa fa-user"></i></span>
+                        <input type="email" class="form-control" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon"><i class="fas fa-key"></i></span>
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <button class="btn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup forms end here -->
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+</html>
